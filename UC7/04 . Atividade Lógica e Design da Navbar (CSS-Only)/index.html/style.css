@@ -1,0 +1,86 @@
+/* Reset / estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Estilos da navbar */
+  nav {
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+  nav .logo {
+    display: inline-block;
+    padding: 16px;
+    font-size: 1.2em;
+    color: white;
+  }
+  nav .menu {
+    display: flex;
+    list-style: none;
+  }
+  nav .menu li a {
+    display: block;
+    padding: 16px;
+    color: white;
+  }
+  nav .menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Checkbox “interruptor invisível” */
+  #nav-toggle {
+    display: none;
+  }
+  
+  /* Label para o ícone hambúrguer */
+  label[for="nav-toggle"] {
+    display: none; /* inicialmente oculto, vai aparecer nas telas pequenas */
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+  }
+  label[for="nav-toggle"] .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: white;
+  }
+  
+  /* Estilo responsivo para telas pequenas */
+  @media (max-width: 768px) {
+    /* Mostrar o label/ícone hambúrguer */
+    label[for="nav-toggle"] {
+      display: inline-block;
+    }
+    /* Ocultar menu por padrão */
+    nav .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    /* Quando checkbox estiver marcado, mostrar menu */
+    #nav-toggle:checked ~ .menu {
+      display: flex;
+    }
+    /* Ajustar links para mobile */
+    nav .menu li a {
+      padding: 16px;
+      border-top: 1px solid #444;
+    }
+  }
+  
