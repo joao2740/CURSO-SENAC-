@@ -1,0 +1,53 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+}
+
+/* Artigos */
+article {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Classe destaque */
+.destaque {
+    border-left: 5px solid #4CAF50;
+    padding-left: 10px;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
