@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Classificados - Cavalos à Venda</title>
+  <!-- Fonte opcional do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styla.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Lino Cavalos & Criações</a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#">Início</a>
+        <a href="#">Categorias</a>
+        <a href="#">Anunciar</a>
+        <a href="#">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search" role="search" aria-label="Pesquisar anúncios">
+          <input type="search" placeholder="Pesquisar por raça, nome, cidade..." />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Área principal -->
+  <main class="container">
+    <!-- Título e filtros -->
+    <section class="page-top">
+      <h1>Cavalos à Venda</h1>
+      <div class="filters">
+        <label>
+          <span>Ordenar por:</span>
+          <select>
+            <option>Mais recentes</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+          </select>
+        </label>
+        <label>
+          <span>Local:</span>
+          <input type="text" placeholder="Cidade ou estado" />
+        </label>
+      </div>
+    </section>
+
+    <!-- Grade de anúncios -->
+    <section class="listings" aria-live="polite">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://i0.wp.com/zootecniabrasil.com/wp-content/uploads/2024/04/image-6.png?resize=800%2C600&ssl=1')"
+             role="img" aria-label="Imagem do cavalo 1"></div>
+        <div class="card-body">
+          <h2 class="card-title">Cavalo Puro Sangue</h2>
+          <p class="card-meta">Raça: Mangalarga • Local: São Paulo - SP</p>
+          <p class="card-price">R$ 12.500</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://animalbusiness.com.br/wp-content/uploads/2021/04/image1-800x533.jpg')"
+             role="img" aria-label="Imagem do cavalo 2"></div>
+        <div class="card-body">
+          <h2 class="card-title">Marchador Batizado</h2>
+          <p class="card-meta">Raça: Marchador • Local: Minas Gerais - MG</p>
+          <p class="card-price">R$ 8.900</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://animalbusiness.com.br/wp-content/uploads/2022/02/2022-ABB-MATERIA-CAVALO-QUARTO-DE-MILHA-cavalo_racaquartodemilha_ABB.jpg')"
+             role="img" aria-label="Imagem do cavalo 3"></div>
+        <div class="card-body">
+          <h2 class="card-title">Quarto de Milha</h2>
+          <p class="card-meta">Raça: Quarto de Milha • Local: Rio Grande do Sul - RS</p>
+          <p class="card-price">R$ 15.000</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://agroemcampo.ig.com.br/wp-content/uploads/2025/05/Esteio-de-Tres-Coracoes-instagram.png')"
+             role="img" aria-label="Imagem do cavalo 4"></div>
+        <div class="card-body">
+          <h2 class="card-title">Mangalarga Marchador</h2>
+          <p class="card-meta">Raça: Mangalarga • Local: Paraná - PR</p>
+          <p class="card-price">R$ 11.200</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://clubedohipismo.com.br/ate2023/wp-content/uploads/2022/12/Concurso-de-Modelo-e-Andamentos-Quebella-do-Vouga-Foto-Ney-Messi-scaled-e1669981411367.jpg')"
+             role="img" aria-label="Imagem do cavalo 5"></div>
+        <div class="card-body">
+          <h2 class="card-title">Cavalo de Concurso</h2>
+          <p class="card-meta">Raça: Árabe • Local: Bahia - BA</p>
+          <p class="card-price">R$ 22.000</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card">
+        <div class="card-media" style="background-image:url('https://www.comprerural.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-16-at-18.26.08.jpeg')"
+             role="img" aria-label="Imagem do cavalo 6"></div>
+        <div class="card-body">
+          <h2 class="card-title">Vale do Campo</h2>
+          <p class="card-meta">Raça: Crioulo • Local: Rio de Janeiro - RJ</p>
+          <p class="card-price">R$ 9.750</p>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver anúncio</a>
+            <a class="btn-outline" href="#">Contato</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Paginação -->
+    <nav class="pagination" aria-label="Paginação de anúncios">
+      <a class="page prev" href="#">&laquo; Anterior</a>
+      <a class="page" href="#">1</a>
+      <a class="page" href="#">2</a>
+      <a class="page active" href="#">3</a>
+      <a class="page" href="#">4</a>
+      <a class="page next" href="#">Próxima &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 OlymShopBR. Template de exemplo. Imagens via Unsplash (placeholders).</p>
+      <nav class="footer-nav">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Observação: scripts podem ser adicionados para carregar conteúdo dinamicamente -->
+</body>
+</html>
